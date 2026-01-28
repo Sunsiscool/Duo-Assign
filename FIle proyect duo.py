@@ -26,14 +26,14 @@ while True:
             n1 = int(input("inserte el primer numero: "))
             n2 = int(input("inserte el segundo numero: "))
 
-            print(f"la suma de {n1} + {n2} es = {suma{n1,n1}}")
+            print(f"la suma de {n1} + {n2} es = {suma(n1,n2)}")
 
         case "2":
             print("resta")
             n1 = int(input("insete el primer numero: "))
             n2 = int(input("inserte el segundo numero: "))
 
-            print(f"la resta de {n1} - {n2} es = {suma{n1,n1}}")
+            print(f"la resta de {n1} - {n2} es = {suma(n1,n2)}")
 
         case "3":
             print("Bye")
