@@ -4,19 +4,22 @@ def suma(a,b):
 def resta(a,b):
     return a-b
 
-#multiplicacion
+def multiplicacion(a,b):
+    return a*b
 
-#division
+def division(a,b):
+    return a/b
+
 
 while True:
     print("Menu calculator")
 
     print("1, suma")
     print("2, resta")
-    #multiplicacion
-
-    #division
-    print("3, salir")
+    print("3, multiplicacion")
+    print("4, division")
+   
+    print("5, salir")
 
     usuario = input("")
 
@@ -33,11 +36,26 @@ while True:
             n1 = int(input("insete el primer numero: "))
             n2 = int(input("inserte el segundo numero: "))
 
-            print(f"la resta de {n1} - {n2} es = {suma(n1,n2)}")
+            print(f"la resta de {n1} - {n2} es = {resta(n1,n2)}")
 
         case "3":
-            print("Bye")
-            break
+            print("multiplicacion")
+            n1 = int(input("insete el primer numero: "))
+            n2 = int(input("inserte el segundo numero: "))
 
-        case _:
-            print("No es una opcion valida")
+            print(f"la multiplicacion de {n1} * {n2} es = {multiplicacion(n1,n2)}")
+
+        case "4":
+            print("division")
+            n1 = int(input("insete el primer numero: "))
+            n2 = int(input("inserte el segundo numero: "))
+
+            if n2 == 0:
+                print("no se puede hacer una division entre 0")
+            else:
+                print(f"la division de {n1} / {n2} es = {division(n1,n2)}")
+            
+        case "5":
+            print ("bye")
+            break 
+
